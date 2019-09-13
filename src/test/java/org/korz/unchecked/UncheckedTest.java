@@ -39,10 +39,4 @@ public class UncheckedTest {
             assertEquals(cause, e);
         }
     }
-
-    @Test
-    public void noStackTrace() {
-        UncheckedException e = new UncheckedException(new Exception("blah"));
-        assertEquals(0, e.getStackTrace().length);
-    }
 }
